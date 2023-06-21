@@ -5,7 +5,7 @@ with open("app/Readme.md", "r") as file:
 
 setup(
     name="cipher_kit",
-    version="0.0.1",
+    version="0.0.2",
     description="Module which helps in encryption and decryption",
     author="Pankaj",
     author_email="pankaj.vishw.dev@gmail.com",
@@ -19,5 +19,11 @@ setup(
         "Programming Language :: Python :: 3 ",
         "License :: OSI Approved :: MIT License"
 
-    ]
+    ],
+    extra_requires={
+        "dev": [
+            "pytest>=7.0.0",
+        ]
+    }
+
 )
