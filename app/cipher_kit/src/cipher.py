@@ -73,6 +73,12 @@ class Cipher:
         text_list = [text[x:x + 2] for x in range(0, len(text), 2)]
 
         for letter in text_list:
+            if len(letter) != 2:
+                # This block will only be true when have text which is not encrypted by Cipher.encrypt or
+                # text is corrupted
+                # In either case method should not raise any error
+                continue
+
             value = ord(letter[0])
             remainder = ord(letter[1])
 

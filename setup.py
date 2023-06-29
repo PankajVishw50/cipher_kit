@@ -5,7 +5,7 @@ with open("app/Readme.md", "r") as file:
 
 setup(
     name="cipher_kit",
-    version="0.0.3",
+    version="0.0.4",
     description="Module which helps in encryption and decryption",
     author="Pankaj",
     author_email="pankaj.vishw.dev@gmail.com",
